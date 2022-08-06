@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Médias digitais</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>É recomendado abrir essa imagem em vários dispositivos diferentes ou redimensionar a janela.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem grande">
+    </picture>
+    <h1>Áudios</h1>
+    <p>Áudios no html.</p>
+    <audio src="media/anno-domini-beats.mp3" controls autoplay>Anno Domini Beats</audio>
+    <p>Navegadores são compátiveis com os formatos de áudio mp3, wav e ogg.</p>
+    
+    <audio preload="metadata" autoplay controls loop>
+        <source src="media/go-neefex.mp3" type="audio/mpeg">
+        <source src="media/anno-domini-beats.mp3" type="audio/mpeg">
+        <p>
+            Seu navegador não conseguiu reproduzir. Clique <a href="media/anno-domini-beats.mp3">aqui</a> para baixar o mp3.
+        </p>
+    </audio>
+</body>
+</html>

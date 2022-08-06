@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        a {
+            color: rgb(160, 241, 8);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: rgb(255, 0, 0);
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:active {
+            color:rgb(157, 255, 0);
+        }
+
+        a::after {
+            content: " Link";
+            text-decoration: none;
+            font-weight: normal;
+            color: cadetblue;
+        }
+
+        .esp::after {
+            content: " <=";
+        }
+    </style>
+    <title>Links</title>
+</head> 
+<body>
+    <h1>Personalizando links</h1>
+    <hr>
+    <ul>
+        <li><a href="https://github.com/maicon-hoppe" target="_blank">GitHub</a>
+        <li><a href="https://www.linkedin.com/feed/" target="_blank" class="esp">Linkedin</a>
+    </ul>
+</body>
+</html>

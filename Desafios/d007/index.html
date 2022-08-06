@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessafio 7</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <hr>
+    <p>A imagem deste site é redimensionavel, teste mudar o tamanho da janela. :)</p>
+    <picture>
+        <source media="(min-width: 1230px)" srcset="imagens/paisagem-g.png" type="image/png">
+        <source media="(min-width: 770px)" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-p.png" alt="Imagem G">
+    </picture>
+</body>
+</html>

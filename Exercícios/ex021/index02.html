@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(161, 161, 236);
+        }
+
+        header {
+            background-image: linear-gradient(to bottom, rgb(138, 228, 138), rgb(42, 129, 145));
+
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            text-decoration: underline;
+            
+            border-radius: 10px 10px 0px 0px ;
+
+            margin: 20px auto;
+        }
+
+        header > nav {
+            color: white;
+            
+            background-color: coral;
+            text-align: left;
+            font-weight: bold;
+            
+            margin: auto 10px;
+            
+            padding-left: 6px;
+        }
+
+        a {
+            color: aqua;
+        }
+
+        a:visited {
+            color: beige;
+        }
+
+        main {
+            background-color: white;
+            
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: justify;
+            
+            padding: 15px;
+            
+            border: 5px solid white;
+            border-radius: 10px;
+            
+            margin: 18px 90px;
+            
+            box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.255);
+        }
+
+        main > p {
+            text-align: end;
+        }
+
+        aside {
+            font: bold 15px Arial, sans-serif;
+            text-align: end;
+        }
+
+        h2 {
+            font: bold 26px Georgia, 'Times New Roman', Times, serif;
+        }
+
+        footer {
+            background-color: rgb(43, 96, 177);
+        }
+
+        footer > p {
+            
+            text-align: center;
+            
+            padding: 10px 2px 26px;
+        }
+    </style>
+    <title>Tipos de caixas em html</title>
+</head>
+<body>
+    <header>
+        <h1>Organizando caixas no site</h1>
+        <nav>
+            <p>
+                <a href="#">Opção 1</a> |
+                <a href="#">Opção 2</a> |
+                <a href="#">Opção 3</a>
+            </p>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <p>SITE BEM BACANA</p>
+        <section>
+            <h2>Coisas Legais</h2>
+            <p>
+                Um monte de coisas bacanas estão escritas aqui.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cum quidem consectetur, sint impedit illum fugiat in quibusdam, atque iste repudiandae ipsam? Iure exercitationem quibusdam ipsa eius aspernatur accusamus iste.
+            </p>
+        </section>
+        <section>
+            <h2>Artigos</h2>
+            <article>
+                <p>Informações importantes sobre assunto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, assumenda laudantium consequatur est exercitationem nobis qui, quisquam, cumque harum libero cupiditate consequuntur quam ipsum velit reprehenderit modi obcaecati deleniti ullam.</p>
+                <aside>
+                    Nome: SIT AMMET
+                </aside>
+            </article>
+        </section>
+        <section>
+            <h2>Outras coisas</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum architecto ab totam. Nulla optio recusandae, culpa ut suscipit rerum nihil quis quasi ea, nam ullam vitae praesentium perspiciatis in dolore!
+            </p>
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>Esse site foi feito por Maicon ©</p>
+    </footer>
+</body>
+</html>
