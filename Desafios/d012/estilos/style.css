@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Arial, Helvetica, sans-serif;
+    --fonte2: 'Passion One', Arial, Helvetica, cursive;
+    --fonte3: 'Sriracha', Arial, Helvetica, cursive;
+}
+
+* {
+    margin: 0px;
+}
+
+header {
+    padding: 40px 5vw;
+
+    color: white;
+    font-family: var(--fonte1);
+    text-align: center;
+
+    background-color: black;
+}
+
+header > h1 {
+    margin: 10px;
+
+    font: bold 10vw var(--fonte2);
+    font-variant: small-caps;
+    letter-spacing: 3px;
+}
+
+main p {
+    padding-bottom: 80px;
+    margin: 10px;
+
+    font: 4vw var(--fonte3);
+    line-height: 2em;
+}
+
+section {
+    padding: 6vh 3vw;
+}
+
+section.imagem {
+    box-shadow: inset 3px 3px 20px #00000094;
+}
+
+section.imagem > p {
+    display: inline-block;
+    min-width: fit-content;
+    padding: 8px;
+    
+    color: white;
+
+    background-color: #00000094;
+}
+
+#p1 {
+    background: #9DD103 url(../imagens/pexels-flor.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+#p2 {
+    background: #C9C9C9 url(../imagens/pexels-carta.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+footer {
+    padding: 10px;
+
+    color: white;
+    font-family: var(--fonte1);
+    text-align: center;
+
+    background-color: black;
+}
+
+a {
+    color: white;
+    font: bold 1em var(--fonte1);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
