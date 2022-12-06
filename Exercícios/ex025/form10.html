@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Ainda mais Output</h1>
+    <hr>
+    <form action="dados.py">
+        <p>
+            <label for="iano">Ano:</label>
+            <input type="number" name="ano" id="iano" required min="1900" max="2020" value="2000"
+            oninput="idadei.innerHTML = Number(2022) - Number(iano.value)">
+        </p>
+        <p>
+            <label for="idadei">Idade:</label>
+            <output id="idadei">22</output>
+        </p>
+        <p>
+            <input type="reset" value="Apagar">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>

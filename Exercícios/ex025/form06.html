@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Ainda mais Formulários</h1>
+    <hr>
+    <form action="dados.py" autocomplete="on" method="post">
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor" value="#C44D1C">
+        </p>
+        <p>
+            <label for="inivel">Nível:</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+        </p>
+        <p>
+            <label for="iarq">Arquivo:</label>
+            <input type="file" name="arq" id="iarq">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>

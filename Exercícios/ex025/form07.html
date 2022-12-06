@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Opções de Formulário</h1>
+    <hr>
+    <form action="dados.py" method="post">
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="est" id="iest">
+                <option value="">--- Escolha ---</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="SP">São Paulo</option>
+                <optgroup label="Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="prof">Profissão</label>
+            <input type="text" id="prof" name="prof" list="lst">
+            <datalist id="lst">
+                <option>Professor</option>
+                <option value="adm">Administrador</option>
+                <option value="cont">Contador</option>
+                <option value="ger">Gerente</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="msg">Mensagem:</label><br>
+            <textarea name="mgs" id="imsg" cols="30" rows="10" placeholder="Mensagem"></textarea>
+        </p>
+        <p>
+            <input type="reset" value="Apagar">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
