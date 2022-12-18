@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @charset "UTF-8";
+        
+
+        /* Declaração Gerais */
+        
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+
+            color: bisque;
+            font-family: Arial, Helvetica, sans-serif;
+
+            background-color: #233EFF;
+        }
+
+        h1 {
+            padding: 3px;
+        }
+
+
+        /* Declarações Retrato */
+
+
+        @media screen and (orientation: portrait) {
+            body {
+                background-image: url(../imagens/cev-portrait.jpg);
+                background-position: center bottom;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+
+
+        /* Declarações Paisagem */
+
+        
+        @media screen and (orientation: landscape) {
+            body {
+                background-image: url(../imagens/cev-landscape.jpg);
+                background-position: left bottom;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+    </style>
+    <title>Media Types</title>
+</head>
+<body>
+    <h1>Texto texto texto texto</h1>
+    <hr>
+</body>
+</html>

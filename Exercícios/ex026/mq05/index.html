@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/mobile.css" media="all">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Media Querry</title>
+</head>
+<body onresize="mudaTam()">
+    <header>
+        <h1>Site de Exemplo</h1>
+        <div id="uppermenu" onclick="clickMenu()">
+            <a href="#">☰</a>
+        </div>
+        <nav id="menu">
+            <a href="#" class="opc">Opção 1</a>
+            <a href="#" class="opc">Opção 2</a>
+            <a href="#" class="opc">Opção 3</a>
+            <a href="#" class="opc">Opção 4</a>
+            <a href="#" class="opc">Opção 5</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Responsividade do menu</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quis, distinctio exercitationem quam quos 
+                neque nobis ad quisquam cupiditate molestias delectus eveniet, officiis quae velit sunt corporis impedit quo 
+                aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis error laboriosam dignissimos 
+                voluptatum odio in provident exercitationem. Quasi, dolorem ducimus ratione natus quam, culpa, laudantium 
+                cumque ipsum consequuntur eligendi temporibus!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias odit nihil et deserunt dolor, qui fugiat 
+                veritatis eum! Nihil fugiat assumenda minima atque ad. Non perferendis sunt harum ipsa corrupti. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Accusantium fuga iste consectetur harum, ullam id cumque vitae 
+                dicta recusandae totam quaerat hic, ad dignissimos impedit iusto placeat eveniet distinctio eaque?
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe iure nobis itaque reprehenderit dolorum omnis d
+                istinctio eius maiores nisi, pariatur aspernatur ipsum molestiae tempora voluptates eaque voluptas architecto 
+                nulla quae!
+            </p>
+        </article>
+        <aside>
+            <section>
+                <h2>Lorem Ipsum</h2>
+                <a href="https://thesquid.ink/flat-icons/">
+                    <img src="media/ps4-controller-icon.png" alt="Controle">
+                </a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ut in aperiam ipsum quis sunt iure expedita 
+                    cupiditate provident, libero magnam consequatur, velit sequi minima esse facilis eius fuga ad?
+                </p>
+            </section>
+            <section>
+                <h2>Dolor sit</h2>
+                <a href="https://thesquid.ink/flat-icons/">
+                    <img src="media/rubber-duck-icon.png" alt="Pato">
+                </a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, rem excepturi alias molestias odio nam, 
+                    maxime ratione optio asperiores dicta dolorem temporibus maiores impedit ea totam minima repudiandae 
+                    at. At! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, totam. Cum et excepturi 
+                    nobis quod, ullam magni modi odio quisquam impedit, perspiciatis mollitia voluptas repellat esse 
+                    necessitatibus consequatur culpa architecto.
+                </p>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <strong>LOREM IPSUM</strong>
+        <ul>
+            <li>
+                <a href="#">Lorem</a>
+            </li>
+            <li>
+                <a href="#">Ipsum</a>
+            </li>
+            <li>
+                <a href="#">Dolor</a>
+            </li>
+            <li>
+                <a href="#">Sit</a>
+            </li>
+            <li>
+                <a href="#">Ammet</a>
+            </li>
+            <li>
+                <a href="#">Consectetur</a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+
+        function mudaTam() {
+            if (window.innerWidth >= 426) {
+                menu.style.display = "block"
+            } else {
+                menu.style.display = "none"
+            }
+        }
+
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
