@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: #063B7A;
+}
+
+main {
+    height: 70%;
+    min-height: 424px;
+    max-height: 333px;
+    width: 60%;
+    min-width: 210px;
+    max-width: 255px;
+    margin: auto;
+
+    position: relative;
+    top: 50%;
+
+    border-radius: 9px;
+    overflow: hidden;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: white;
+    box-shadow: 2px 1px 2px black;
+
+    transform: translateY(-50%);
+}
+
+#imagem {
+    height: 32%;
+    min-height: 100px;
+    width: 100%;
+    max-width: 255px;
+    min-width: 192px;
+
+    background-image: url(../media/pexels-francesco-ungaro-back.jpg);
+}
+
+#login {
+    height: 68%;
+    margin: 5px;
+}
+
+#login > h2 { text-align: center; }
+
+#login > p { margin: 5px 3px 22px; }
+
+.material-symbols-outlined {
+    border: 1px solid black;
+    background-color: #c779ff;
+}
+
+#inome, #isenha {
+    width: 80%;
+    padding: 3.2px 2px;
+    margin: 0px auto 5px;
+
+    position: relative;
+    right: 6px;
+    bottom: 7.25px;
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    box-shadow: inset 0px 0px 3px black;
+}
+
+#inome:focus, #isenha:focus {
+    border: 1px solid black;
+    box-shadow: inset 0px 0px 6px black;
+}
+
+#upperbtm { margin-top: 10px; }
+
+.btm{
+    display: block;
+    width: 92%;
+    padding: 3px;
+    margin: 10px auto;
+
+    border: none;
+    border-radius: 5px;
+    background-color: #ffb7ff;
+    box-shadow: 1px 1px 2px black;
+}
+
+.btm:hover {
+    cursor: pointer;
+    background-color: #daa0da;
+}
+
+button:has(span) { padding: 1%; }
+
+button:has(span) > p {
+    display: inline;
+    position: relative;
+    bottom: 7px;
+}
+
+#icmail {
+    border: none;
+    background-color: transparent;
+}
+
+.btm:active { box-shadow: inset 1px 1px 2px black; }

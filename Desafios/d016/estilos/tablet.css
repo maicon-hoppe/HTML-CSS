@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+
+    body { background-image: linear-gradient(#012768, #1574AC); }
+
+    main {
+        height: 40%;
+        min-height: 280px;
+        width: 80%;
+        max-width: 615px;
+    }
+
+    #imagem {
+        display: inline-block;
+        height: 100%;
+        width: 20%;
+        min-width: 10px;
+
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 3px;
+    }
+
+    #login {
+        display: inline-block;
+        height: 100%;
+        width: 77%;
+        margin: 0px;
+        
+        position: relative;
+        left: 3px;
+        bottom: 8%;
+    }
+
+    #login > p { margin: 0px 3px 20px; }
+
+    #inome, #isenha {
+        width: 83%;
+        padding: 5px;
+
+        border: 1px solid gray;
+    }
+
+    #upperbtm { margin: 0px; }
+
+    .btm {
+        width: 100%;
+        padding: 8px 10px;
+        margin: 2% 0px 3%;
+    }
+
+}
